@@ -14,3 +14,25 @@ join Usuarios U
 ON UL.IdUsuario = U.IdUsuario
 join Lancamentos L
 ON UL.IdLancamento = L.IdLancamento;
+
+Select LEN('La Casa de Papel');
+
+Create Procedure Linhas
+@QtdLinhas varchar(200)
+As
+select count(*)
+from Lancamentos
+where IdLancamento >= 1
+
+Execute Linhas '1';
+Drop Procedure Linhas;
+
+Create Procedure FilmeCategoria
+@FilmeCategoria varchar(200)
+As
+select count(*)
+from Lancamentos
+where IdCategoria = 1
+
+Execute FilmeCategoria '1';
+Drop Procedure FilmeCategoria;

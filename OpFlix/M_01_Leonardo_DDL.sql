@@ -48,3 +48,4 @@ Create table UsuariosLancamentos(
 
 Alter table Lancamentos
 alter column Duracao varchar(255);
+
