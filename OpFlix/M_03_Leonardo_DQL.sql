@@ -65,3 +65,5 @@ Execute CategoriaPlataforma '4';
 Drop Procedure CategoriaPlataforma;
 
 select * from Lancamentos;
+
+select distinct Nome, IdCategoria, IdTipo, Duracao from Lancamentos;

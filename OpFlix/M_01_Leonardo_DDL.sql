@@ -49,3 +49,6 @@ Create table UsuariosLancamentos(
 Alter table Lancamentos
 alter column Duracao varchar(255);
 
+Create View PlataformasCategorias(
+	IdPlataforma int foreign key references Plataformas (IdPlataforma)
+);
